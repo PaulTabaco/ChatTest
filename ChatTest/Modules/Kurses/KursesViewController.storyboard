@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="30c-56-ptV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kurses-->
+        <scene sceneID="gy2-2E-EFU">
+            <objects>
+                <viewController storyboardIdentifier="KursesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="30c-56-ptV" customClass="KursesViewController" customModule="ChatTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UIN-1o-IAs"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Wd-6a-cGY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wYQ-4t-f2l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O97-Vw-xif">
+                                <rect key="frame" x="98" y="308" width="180" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.278383989" blue="0.63116191789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="i9C-Jb-SMW"/>
+                                    <constraint firstAttribute="width" constant="180" id="xd1-Wm-oMG"/>
+                                </constraints>
+                                <state key="normal" title="SHOW CHATS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showChatsButtonAction:" destination="30c-56-ptV" eventType="touchUpInside" id="t6B-3l-WIA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O97-Vw-xif" firstAttribute="centerY" secondItem="wYQ-4t-f2l" secondAttribute="centerY" id="6JI-Ki-FEC"/>
+                            <constraint firstItem="O97-Vw-xif" firstAttribute="centerX" secondItem="wYQ-4t-f2l" secondAttribute="centerX" id="IM7-1y-aMj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Kurses" image="kurses" selectedImage="kurses" id="wBT-Iu-R3F"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ted-ga-Gmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496.80000000000001" y="-115.59220389805098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kurses" width="27" height="26"/>
+    </resources>
+</document>
